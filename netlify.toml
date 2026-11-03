@@ -1,0 +1,10 @@
+[build]
+  base = "laboratorio-react"
+  command = "npm install && npm run build"
+  publish = "dist"
+
+# SPA fallback: React Router (BrowserRouter) routes like /fundamentos
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
